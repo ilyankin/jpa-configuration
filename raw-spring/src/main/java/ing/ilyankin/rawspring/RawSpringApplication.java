@@ -1,13 +1,13 @@
-package ing.ilyankin.jpaconfiguration;
+package ing.ilyankin.rawspring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JpaConfigurationApplication {
+public class RawSpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JpaConfigurationApplication.class, args);
+        SpringApplication.run(RawSpringApplication.class, args);
     }
 
 }

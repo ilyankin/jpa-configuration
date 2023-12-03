@@ -1,26 +1,38 @@
 plugins {
     java
+    idea
     id("org.springframework.boot") version "3.2.0"
     id("io.spring.dependency-management") version "1.1.4"
 }
 
-group = "ing.ilyankin"
-version = "0.0.1-SNAPSHOT"
+subprojects {
+    group = "ing.ilyankin"
+    version = "0.0.1-SNAPSHOT"
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_21
+    apply(plugin = "java")
+    apply(plugin = "idea")
+    apply(plugin = "org.springframework.boot")
+    apply(plugin = "io.spring.dependency-management")
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_21
+    }
+
+    dependencies {
+        implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+        runtimeOnly("com.h2database:h2")
+        testImplementation("org.springframework.boot:spring-boot-starter-test")
+    }
+
+    tasks.test {
+        useJUnitPlatform()
+    }
 }
 
-repositories {
-    mavenCentral()
+tasks.jar {
+    enabled = true
 }
 
-dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    runtimeOnly("com.h2database:h2")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-}
-
-tasks.withType<Test> {
-    useJUnitPlatform()
+tasks.bootJar {
+    enabled = false
 }
