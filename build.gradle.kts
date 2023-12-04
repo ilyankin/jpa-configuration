@@ -17,9 +17,9 @@ subprojects {
     java {
         sourceCompatibility = JavaVersion.VERSION_21
     }
-
     dependencies {
         implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+        implementation("org.hibernate.orm:hibernate-hikaricp")
         runtimeOnly("com.h2database:h2")
         testImplementation("org.springframework.boot:spring-boot-starter-test")
     }
