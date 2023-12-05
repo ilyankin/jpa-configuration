@@ -17,9 +17,9 @@
 
         <property name="hibernate.hbm2ddl.auto">create</property>
 
-        <mapping class="ing.ilyankin.rawspring.model.User"/>
-        <mapping class="ing.ilyankin.rawspring.model.Profile"/>
-        <mapping class="ing.ilyankin.rawspring.model.Post"/>
-        <mapping class="ing.ilyankin.rawspring.model.Comment"/>
+        <mapping class="ing.ilyankin.hibernatejpaxml.model.User"/>
+        <mapping class="ing.ilyankin.hibernatejpaxml.model.Profile"/>
+        <mapping class="ing.ilyankin.hibernatejpaxml.model.Post"/>
+        <mapping class="ing.ilyankin.hibernatejpaxml.model.Comment"/>
     </session-factory>
 </hibernate-configuration>

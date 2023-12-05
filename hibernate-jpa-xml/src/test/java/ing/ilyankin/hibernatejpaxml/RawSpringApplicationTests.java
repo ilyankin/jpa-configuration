@@ -1,9 +1,9 @@
-package ing.ilyankin.rawspring;
+package ing.ilyankin.hibernatejpaxml;
 
-import ing.ilyankin.rawspring.model.Comment;
-import ing.ilyankin.rawspring.model.Post;
-import ing.ilyankin.rawspring.model.Profile;
-import ing.ilyankin.rawspring.model.User;
+import ing.ilyankin.hibernatejpaxml.model.Comment;
+import ing.ilyankin.hibernatejpaxml.model.Post;
+import ing.ilyankin.hibernatejpaxml.model.Profile;
+import ing.ilyankin.hibernatejpaxml.model.User;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.junit.jupiter.api.Assertions;
@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RawSpringApplicationTests {
+class HibernateJpaXmlSpringApplicationTests {
     @PersistenceContext
     private EntityManager em;
 

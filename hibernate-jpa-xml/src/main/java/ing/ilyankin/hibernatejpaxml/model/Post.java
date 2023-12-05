@@ -1,4 +1,4 @@
-package ing.ilyankin.rawspring.model;
+package ing.ilyankin.hibernatejpaxml.model;
 
 import jakarta.persistence.*;
 import lombok.*;

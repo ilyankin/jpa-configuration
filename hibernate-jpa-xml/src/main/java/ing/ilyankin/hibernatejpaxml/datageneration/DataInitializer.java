@@ -1,4 +1,4 @@
-package ing.ilyankin.rawspring.datageneration;
+package ing.ilyankin.hibernatejpaxml.datageneration;
 
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
