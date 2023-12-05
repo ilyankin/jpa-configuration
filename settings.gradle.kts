@@ -7,3 +7,4 @@ dependencyResolutionManagement {
 }
 
 include("raw-jpa")
+include("hibernate-jpa")
