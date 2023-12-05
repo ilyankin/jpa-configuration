@@ -18,6 +18,8 @@ subprojects {
         sourceCompatibility = JavaVersion.VERSION_21
     }
     dependencies {
+        implementation("org.projectlombok:lombok")
+        annotationProcessor("org.projectlombok:lombok")
         implementation("org.springframework.boot:spring-boot-starter-data-jpa")
         implementation("org.hibernate.orm:hibernate-hikaricp")
         runtimeOnly("com.h2database:h2")
