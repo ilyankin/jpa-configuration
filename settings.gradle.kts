@@ -6,4 +6,4 @@ dependencyResolutionManagement {
     }
 }
 
-include("raw-spring")
+include("raw-jpa")
