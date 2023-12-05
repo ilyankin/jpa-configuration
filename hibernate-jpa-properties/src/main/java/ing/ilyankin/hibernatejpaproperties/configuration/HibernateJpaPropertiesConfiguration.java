@@ -1,4 +1,4 @@
-package ing.ilyankin.rawspring.configuration;
+package ing.ilyankin.hibernatejpaproperties.configuration;
 
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +15,7 @@ public class HibernateJpaPropertiesConfiguration {
     @Bean("entityManagerFactory") // this bean name is mandatory to apply @PersistenceContext annotation support
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-        sessionFactory.setPackagesToScan("ing.ilyankin.rawspring.model");
+        sessionFactory.setPackagesToScan("ing.ilyankin.hibernatejpaproperties.model");
         Properties hibernateProperties = new Properties();
         hibernateProperties.load(new FileInputStream("./src/main/resources/hibernate.properties"));
         sessionFactory.setHibernateProperties(hibernateProperties);

@@ -1,9 +1,9 @@
-package ing.ilyankin.rawspring.datageneration;
+package ing.ilyankin.hibernatejpaproperties.datageneration;
 
-import ing.ilyankin.rawspring.model.Comment;
-import ing.ilyankin.rawspring.model.Post;
-import ing.ilyankin.rawspring.model.Profile;
-import ing.ilyankin.rawspring.model.User;
+import ing.ilyankin.hibernatejpaproperties.model.Comment;
+import ing.ilyankin.hibernatejpaproperties.model.Profile;
+import ing.ilyankin.hibernatejpaproperties.model.Post;
+import ing.ilyankin.hibernatejpaproperties.model.User;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
