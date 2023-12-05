@@ -4,7 +4,7 @@
 
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.ejb.persistenceUnitName">raw-spring-sample</property>
+        <property name="hibernate.ejb.persistenceUnitName">hibernate-jpa-xml</property>
 
         <property name="hibernate.connection.url">jdbc:h2:file:./data/demo;AUTO_SERVER=TRUE</property>
         <property name="hibernate.connection.username">sa</property>

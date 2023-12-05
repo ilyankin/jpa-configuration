@@ -7,4 +7,5 @@ dependencyResolutionManagement {
 }
 
 include("raw-jpa")
-include("hibernate-jpa")
+include("hibernate-jpa-xml")
+include("hibernate-jpa-properties")
