@@ -21,7 +21,7 @@ public class DataInitializer implements ApplicationListener<ContextRefreshedEven
         var users = dataGenerator.persistDefaultUsers(5);
         dataGenerator.persistDefaultUserProfiles(users);
         var posts = dataGenerator.persistDefaultComments(users, 2);
-        dataGenerator.persistDefaultComments(Map.of(
+        var comments = dataGenerator.persistDefaultComments(Map.of(
                 users.get(0), List.of(posts.get(1), posts.get(3), posts.get(7)),
                 users.get(2), List.of(posts.get(0), posts.get(3), posts.get(8), posts.get(9)),
                 users.get(3), List.of(posts.get(5), posts.get(8))
