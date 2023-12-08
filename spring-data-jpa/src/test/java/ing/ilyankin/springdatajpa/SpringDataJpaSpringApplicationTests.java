@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringDataJpSpringApplicationTests {
+class SpringDataJpaSpringApplicationTests {
     @PersistenceContext
     private Session session;
 

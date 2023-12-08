@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RawSpringApplication {
+public class RawJpaApplication {
     public static void main(String[] args) {
-        SpringApplication.run(RawSpringApplication.class, args);
+        SpringApplication.run(RawJpaApplication.class, args);
     }
 }
