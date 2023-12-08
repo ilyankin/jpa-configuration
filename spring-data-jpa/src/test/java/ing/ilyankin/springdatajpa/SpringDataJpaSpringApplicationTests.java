@@ -1,5 +1,6 @@
 package ing.ilyankin.springdatajpa;
 
+
 import ing.ilyankin.springdatajpa.model.Comment;
 import ing.ilyankin.springdatajpa.model.Post;
 import ing.ilyankin.springdatajpa.model.Profile;

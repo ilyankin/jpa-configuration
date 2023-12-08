@@ -41,7 +41,7 @@ public class DataSourceAndJpaConfiguration {
 
     public Properties jpaProperties() {
         Properties properties = new Properties();
-        properties.put("hibernate.format_sql", Boolean.TRUE);
+        properties.put("hibernate.format_sql", true);
         return properties;
     }
 

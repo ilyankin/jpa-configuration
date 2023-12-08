@@ -1,4 +1,4 @@
-package ing.ilyankin.springdatacodeconfiguration.model;
+package ing.ilyankin.springdatajpa.model;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,4 +1,4 @@
-package ing.ilyankin.springdatacodeconfiguration.datageneration;
+package ing.ilyankin.springdatajpa.datageneration;
 
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
