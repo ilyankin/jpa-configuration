@@ -1,4 +1,4 @@
-package ing.ilyankin.rawspring;
+package ing.ilyankin.rawjpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

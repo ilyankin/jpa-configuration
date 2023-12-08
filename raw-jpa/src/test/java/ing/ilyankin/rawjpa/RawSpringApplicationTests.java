@@ -1,15 +1,13 @@
-package ing.ilyankin.rawspring;
+package ing.ilyankin.rawjpa;
 
-import ing.ilyankin.rawspring.model.Comment;
-import ing.ilyankin.rawspring.model.Post;
-import ing.ilyankin.rawspring.model.Profile;
-import ing.ilyankin.rawspring.model.User;
+import ing.ilyankin.rawjpa.model.Comment;
+import ing.ilyankin.rawjpa.model.Post;
+import ing.ilyankin.rawjpa.model.Profile;
+import ing.ilyankin.rawjpa.model.User;
 import jakarta.persistence.PersistenceContext;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest

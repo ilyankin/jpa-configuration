@@ -1,4 +1,4 @@
-package ing.ilyankin.rawspring.configuration;
+package ing.ilyankin.rawjpa.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -6,10 +6,10 @@
     <persistence-unit name="raw-spring-sample">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <class>ing.ilyankin.rawspring.model.User</class>
-        <class>ing.ilyankin.rawspring.model.Profile</class>
-        <class>ing.ilyankin.rawspring.model.Post</class>
-        <class>ing.ilyankin.rawspring.model.Comment</class>
+        <class>ing.ilyankin.rawjpa.model.User</class>
+        <class>ing.ilyankin.rawjpa.model.Profile</class>
+        <class>ing.ilyankin.rawjpa.model.Post</class>
+        <class>ing.ilyankin.rawjpa.model.Comment</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:file:./data/demo;AUTO_SERVER=TRUE"/>
