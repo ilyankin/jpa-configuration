@@ -2,7 +2,6 @@ package ing.ilyankin.springdatacodeconfiguration.configuration;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
-import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -17,9 +16,9 @@ public class DataSourceAndJpaConfiguration {
 
     public DataSourceProperties dataSourceProperties() {
         DataSourceProperties dataSourceProperties = new DataSourceProperties();
-        dataSourceProperties.setUrl("");
+        dataSourceProperties.setUrl("jdbc:h2:file:./data/demo;AUTO_SERVER=TRUE");
         dataSourceProperties.setName("sa");
-        dataSourceProperties.setPassword("jdbc:h2:file:./data/demo;AUTO_SERVER=TRUE");
+        dataSourceProperties.setPassword("");
         return dataSourceProperties;
     }
 
@@ -30,8 +29,8 @@ public class DataSourceAndJpaConfiguration {
 
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean firstEntityManagerFactory(DataSource dataSource,
-                                                                            JpaVendorAdapter jpaVendorAdapter) {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource,
+                                                                       JpaVendorAdapter jpaVendorAdapter) {
         LocalContainerEntityManagerFactoryBean lcemfb = new LocalContainerEntityManagerFactoryBean();
         lcemfb.setDataSource(dataSource);
         lcemfb.setPackagesToScan("ing.ilyankin.springdatacodeconfiguration.model");
