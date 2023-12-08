@@ -1,9 +1,9 @@
-package ing.ilyankin.springdatajpa.datageneration;
+package ing.ilyankin.springdatacodeconfiguration.datageneration;
 
-import ing.ilyankin.springdatajpa.model.Comment;
-import ing.ilyankin.springdatajpa.model.Post;
-import ing.ilyankin.springdatajpa.model.Profile;
-import ing.ilyankin.springdatajpa.model.User;
+import ing.ilyankin.springdatacodeconfiguration.model.Comment;
+import ing.ilyankin.springdatacodeconfiguration.model.Post;
+import ing.ilyankin.springdatacodeconfiguration.model.Profile;
+import ing.ilyankin.springdatacodeconfiguration.model.User;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
