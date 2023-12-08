@@ -17,6 +17,7 @@ subprojects {
     java {
         sourceCompatibility = JavaVersion.VERSION_21
     }
+
     dependencies {
         implementation("org.projectlombok:lombok")
         annotationProcessor("org.projectlombok:lombok")

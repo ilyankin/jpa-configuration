@@ -27,7 +27,6 @@ public class DataSourceAndJpaConfiguration {
         return dataSourceProperties().initializeDataSourceBuilder().type(HikariDataSource.class).build();
     }
 
-
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource,
                                                                        JpaVendorAdapter jpaVendorAdapter) {
@@ -42,6 +41,7 @@ public class DataSourceAndJpaConfiguration {
     public Properties jpaProperties() {
         Properties properties = new Properties();
         properties.put("hibernate.format_sql", true);
+        properties.put("hibernate.hbm2ddl.auto", "create");
         return properties;
     }
 
@@ -49,7 +49,6 @@ public class DataSourceAndJpaConfiguration {
     public JpaVendorAdapter jpaVendorAdapter() {
         HibernateJpaVendorAdapter hibernateJpaVendorAdapter = new HibernateJpaVendorAdapter();
         hibernateJpaVendorAdapter.setShowSql(true);
-        hibernateJpaVendorAdapter.setGenerateDdl(true); // hibernate.hbm2ddl.auto=update
         return hibernateJpaVendorAdapter;
     }
 }
